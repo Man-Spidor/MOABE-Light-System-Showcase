@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Light Demo</ProjectName>
+    <ProjectGuid>{06EDC280-1187-4614-A248-E640C095FA6B}</ProjectGuid>
+    <RootNamespace>Tutorial01</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|X64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BrowseInformation>true</BrowseInformation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>$(SolutionDir)Light Demo\MemTracker\Framework.h</ForcedIncludeFiles>
+      <DisableSpecificWarnings>4435; 4458; 4365; 4061;5219;5204;5266;4471;4596;26812</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\Math\include;$(SolutionDir)dist\IrrKlang\include;$(SolutionDir)dist\jAzulCore\include;$(SolutionDir)dist\MOABE\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>xmllite.lib;shlwapi.lib;d3d11.lib;d3dcompiler.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\IrrKlang\include;$(SolutionDir)dist\jAzulCore\include;$(SolutionDir)dist\MOABE\include;$(SolutionDir)/dist/File/include;$(SolutionDir)/dist/DXTex/include;$(SolutionDir)/dist/Math/include;$(SolutionDir)/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(SolutionDIr)Light Demo\Memtracker\Framework.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>$(SolutionDir)Light Demo\MemTracker\Framework.h</ForcedIncludeFiles>
+      <DisableSpecificWarnings>4435; 4458; 4365; 4061;5219;5204;5266;4471;4596;</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\Math\include;$(SolutionDir)dist\IrrKlang\include;$(SolutionDir)dist\jAzulCore\include;$(SolutionDir)dist\MOABE\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>xmllite.lib;shlwapi.lib;d3d11.lib;d3dcompiler.lib;;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\IrrKlang\include;$(SolutionDir)dist\jAzulCore\include;$(SolutionDir)dist\MOABE\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(SolutionDIr)Light Demo\Memtracker\Framework.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PROFILE;_WINDOWS;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>$(SolutionDir)Light Demo\MemTracker\Framework.h</ForcedIncludeFiles>
+      <DisableSpecificWarnings>4435; 4458; 4365; 4061;5219;5204;5266;4471;4596;</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\Math\include;$(SolutionDir)dist\IrrKlang\include;$(SolutionDir)dist\jAzulCore\include;$(SolutionDir)dist\MOABE\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>xmllite.lib;shlwapi.lib;d3d11.lib;d3dcompiler.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PROFILE;_WINDOWS;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\IrrKlang\include;$(SolutionDir)dist\jAzulCore\include;$(SolutionDir)dist\MOABE\include;</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(SolutionDIr)Light Demo\Memtracker\Framework.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\MOABE Development\MOABE\MemTracker\Framework.h" />
+    <ClInclude Include="..\..\..\..\..\MOABE Development\MOABE\MemTracker\ProjectSettings.h" />
+    <ClInclude Include="..\dist\DXTex\include\DirectXTex.h" />
+    <ClInclude Include="..\dist\File\include\File.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ESoundEngineOptions.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ESoundOutputDrivers.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_EStreamModes.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IAudioRecorder.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IAudioStream.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IAudioStreamLoader.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IFileFactory.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IFileReader.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IRefCounted.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_irrKlangTypes.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISound.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundDeviceList.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundEffectControl.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundEngine.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundMixedOutputReceiver.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundSource.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundStopEventReceiver.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IVirtualRefCounted.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_SAudioStreamFormat.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\ik_vec3d.h" />
+    <ClInclude Include="..\dist\IrrKlang\include\irrKlang.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\Camera.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\d3dUtil.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\DeviceManager.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\DirectionalLight.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\Engine.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\ErrorLogger.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\FlatPlane.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\FogParamData.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GameTimer.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicObject_Base.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicObject_Color.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicObject_ColorLight.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsAttorney.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObjectAttorney.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObjectWF.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObject_Sprite.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObject_Texture.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObject_TextureAlpha.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObject_TextureLight.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObject_Wireframe.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\Image.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\jAzul.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\jAzulRect.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\Keyboard.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\KeyboardEvent.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\LightData.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\LightNum.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\LightParamData.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\MeshSeparator.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\Model.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\ModelTools.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\Mouse.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\MouseEvent.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\MousePoint.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\OrthographicCamera.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\PerspectiveCamera.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\PointLight.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\RenderWindow.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\Sampler.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderBase.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderColor.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderColorLight.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderContextManager.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderSprite.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderTexture.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderTextureLight.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderType.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\SkyBox.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\SpotLight.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\StringConverter.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\TerrainModel.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\Texture.h" />
+    <ClInclude Include="..\dist\jAzulCore\include\WindowsContainer.h" />
+    <ClInclude Include="..\dist\Math\include\Align16.h" />
+    <ClInclude Include="..\dist\Math\include\Constants.h" />
+    <ClInclude Include="..\dist\Math\include\Enum.h" />
+    <ClInclude Include="..\dist\Math\include\MathApp.h" />
+    <ClInclude Include="..\dist\Math\include\MathEngine.h" />
+    <ClInclude Include="..\dist\Math\include\Matrix.h" />
+    <ClInclude Include="..\dist\Math\include\Quat.h" />
+    <ClInclude Include="..\dist\Math\include\QuatApp.h" />
+    <ClInclude Include="..\dist\Math\include\Util.h" />
+    <ClInclude Include="..\dist\Math\include\Vect.h" />
+    <ClInclude Include="..\dist\Math\include\VectApp.h" />
+    <ClInclude Include="..\dist\MOABE\include\Alarmable.h" />
+    <ClInclude Include="..\dist\MOABE\include\AlarmableDeRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\AlarmableManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\AlarmableRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\AlarmID.h" />
+    <ClInclude Include="..\dist\MOABE\include\AlarmList.h" />
+    <ClInclude Include="..\dist\MOABE\include\AlarmRegistrationData.h" />
+    <ClInclude Include="..\dist\MOABE\include\AssetManagers.h" />
+    <ClInclude Include="..\dist\MOABE\include\CameraManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\CleanupSceneStrategy.h" />
+    <ClInclude Include="..\dist\MOABE\include\Collidable.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollidableDeRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollidableGroup.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollidableRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollisionDispatch.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollisionDispatchProxy.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollisionManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollisionTerrainDispatch.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollisionTestCommand.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollisionTestPairCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollisionTestSelfCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollisionTestTerrainCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\CollisionVolume.h" />
+    <ClInclude Include="..\dist\MOABE\include\Colors.h" />
+    <ClInclude Include="..\dist\MOABE\include\CullDistProcessor.h" />
+    <ClInclude Include="..\dist\MOABE\include\CullViewProcessor.h" />
+    <ClInclude Include="..\dist\MOABE\include\CV_AABB.h" />
+    <ClInclude Include="..\dist\MOABE\include\CV_BoxBase.h" />
+    <ClInclude Include="..\dist\MOABE\include\CV_BSphere.h" />
+    <ClInclude Include="..\dist\MOABE\include\CV_OBB.h" />
+    <ClInclude Include="..\dist\MOABE\include\DebugSceneStrategy.h" />
+    <ClInclude Include="..\dist\MOABE\include\DirectionalDeRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\DirectionalRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\Drawable.h" />
+    <ClInclude Include="..\dist\MOABE\include\Drawable2DDeRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\Drawable2DRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\Drawable3DDeRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\Drawable3DRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\DrawableManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\EngineMath.h" />
+    <ClInclude Include="..\dist\MOABE\include\FontManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\FreezeTime.h" />
+    <ClInclude Include="..\dist\MOABE\include\GameObject.h" />
+    <ClInclude Include="..\dist\MOABE\include\GameObjectAttorney.h" />
+    <ClInclude Include="..\dist\MOABE\include\GameObjectDeRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\GameObjectRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\ImageManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\Inputable.h" />
+    <ClInclude Include="..\dist\MOABE\include\InputableDeRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\InputableRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\InputRegistrationData.h" />
+    <ClInclude Include="..\dist\MOABE\include\KeyEventManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\KeyEventType.h" />
+    <ClInclude Include="..\dist\MOABE\include\LightAlarm.h" />
+    <ClInclude Include="..\dist\MOABE\include\LightAttorney.h" />
+    <ClInclude Include="..\dist\MOABE\include\LightBehaviourCommand.h" />
+    <ClInclude Include="..\dist\MOABE\include\LightBlinkingCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\LightManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\LightProcessor.h" />
+    <ClInclude Include="..\dist\MOABE\include\LightProcessors.h" />
+    <ClInclude Include="..\dist\MOABE\include\LightStaticCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABE.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABEAttorney.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABEDirectionalLight.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABELight.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABENullTerrain.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABEPointLight.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABESkybox.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABESkyNull.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABESound.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABESpotLight.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABESprite.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABETerrain.h" />
+    <ClInclude Include="..\dist\MOABE\include\MOABEUser.h" />
+    <ClInclude Include="..\dist\MOABE\include\ModelManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\NormalProcessor.h" />
+    <ClInclude Include="..\dist\MOABE\include\NormalSceneStrategy.h" />
+    <ClInclude Include="..\dist\MOABE\include\PointDeRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\PointLightTrackingCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\PointRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\RegistrationBroker.h" />
+    <ClInclude Include="..\dist\MOABE\include\RegistrationCommand.h" />
+    <ClInclude Include="..\dist\MOABE\include\RegistrationStatus.h" />
+    <ClInclude Include="..\dist\MOABE\include\SamplerManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\Scene.h" />
+    <ClInclude Include="..\dist\MOABE\include\SceneAttorney.h" />
+    <ClInclude Include="..\dist\MOABE\include\SceneManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\SceneManagerAttorney.h" />
+    <ClInclude Include="..\dist\MOABE\include\SceneStrategies.h" />
+    <ClInclude Include="..\dist\MOABE\include\SceneStrategy.h" />
+    <ClInclude Include="..\dist\MOABE\include\SingleKeyEvent.h" />
+    <ClInclude Include="..\dist\MOABE\include\SkyboxObject.h" />
+    <ClInclude Include="..\dist\MOABE\include\SkyboxObjectManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\SoundManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\SpotDeRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\SpotLightTrackingCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\SpotRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\SpriteFont.h" />
+    <ClInclude Include="..\dist\MOABE\include\SpriteString.h" />
+    <ClInclude Include="..\dist\MOABE\include\TerrainArea.h" />
+    <ClInclude Include="..\dist\MOABE\include\TerrainAreaIterator.h" />
+    <ClInclude Include="..\dist\MOABE\include\TerrainManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\TerrainObject.h" />
+    <ClInclude Include="..\dist\MOABE\include\TerrainObjectManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\TextureManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\TimeAttorney.h" />
+    <ClInclude Include="..\dist\MOABE\include\TimeManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\Updatable.h" />
+    <ClInclude Include="..\dist\MOABE\include\UpdatableDeRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\UpdatableManager.h" />
+    <ClInclude Include="..\dist\MOABE\include\UpdatableRegCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizeAABBCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizeBSphereCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizeCmdPool.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizeCommand.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizeLineCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizeLineRayCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizeLineSegmentCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizeOBBCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizePointCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\Visualizer.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizerAttorney.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizerCmdBroker.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizerDefault.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizerDraw.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizerDrawAllCollidable.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizerMarkers.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizerMode.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizerStrategies.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizerStrategy.h" />
+    <ClInclude Include="..\dist\MOABE\include\VisualizeTerrainCellCmd.h" />
+    <ClInclude Include="..\dist\MOABE\include\VolumeAttorney.h" />
+    <ClInclude Include="Campfire.h" />
+    <ClInclude Include="CampfireScene.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="DX App\Resource.h" />
+    <ClInclude Include="FlatPlaneTextured.h" />
+    <ClInclude Include="Forest.h" />
+    <ClInclude Include="LightDayNight.h" />
+    <ClInclude Include="LightDemoFunctions.h" />
+    <ClInclude Include="LightFire.h" />
+    <ClInclude Include="LightForestScene.h" />
+    <ClInclude Include="SpaceFrigate.h" />
+    <ClInclude Include="Tree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\File\lib\File_Debug.lib" />
+    <Library Include="..\dist\IrrKlang\lib\irrKlang.lib" />
+    <Library Include="..\dist\MOABE\lib\MOABE.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\MOABE Development\MOABE\MemTracker\__DO NOT MODIFY__" />
+    <None Include="..\Assets\Shaders\ColorLight.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Assets\Shaders\ColorSelected.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Assets\Shaders\ColorSelected3D.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Assets\Shaders\SimpleColor.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Assets\Shaders\SimpleColor3D.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Assets\Shaders\SimpleColorPlus.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Assets\Shaders\Texture.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Assets\Shaders\TextureLight.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\dist\MOABE\lib\DirectXTex.pdb" />
+    <None Include="..\dist\MOABE\lib\jAzul.pdb" />
+    <None Include="..\dist\MOABE\lib\mathengine_debug.pdb" />
+    <None Include="..\dist\MOABE\lib\MOABE.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="DX App\directx.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DX App\DXApplication.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Assets\Shaders\Sprite.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Campfire.cpp" />
+    <ClCompile Include="CampfireScene.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="FlatPlaneTextured.cpp" />
+    <ClCompile Include="Forest.cpp" />
+    <ClCompile Include="LightDayNight.cpp" />
+    <ClCompile Include="LightDemoFunctions.cpp" />
+    <ClCompile Include="LightFire.cpp" />
+    <ClCompile Include="LightForestScene.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SpaceFrigate.cpp" />
+    <ClCompile Include="Tree.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{f458ef6b-3879-45a1-b690-bb3675eea367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math">
+      <UniqueIdentifier>{2fc45b5c-b974-4692-944d-b2a65a99b337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\include">
+      <UniqueIdentifier>{58c0b827-c48c-445e-a2de-6e80d15288b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\lib">
+      <UniqueIdentifier>{4c379938-5e53-4a18-9e64-c4c326f64ccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\DXTex">
+      <UniqueIdentifier>{063abded-1e9f-4773-8d38-ba7586801519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\DXTex\include">
+      <UniqueIdentifier>{53b8b990-b8c5-4532-ab03-e7130aa67d93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\DXTex\lib">
+      <UniqueIdentifier>{7cb16f48-c669-45bb-9628-6acd1c0caf48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File">
+      <UniqueIdentifier>{2456a3dc-556e-4c00-a0fb-ab1ff1e50f71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\include">
+      <UniqueIdentifier>{1c2fab60-77e2-45d3-be75-f90deb7fb424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\lib">
+      <UniqueIdentifier>{b651abad-1452-4d78-91fb-153a763f0d30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\jAzulCore">
+      <UniqueIdentifier>{4e05705c-7c07-4ca7-b1c3-1ecc16ce03b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\jAzulCore\lib">
+      <UniqueIdentifier>{028122e1-0fc7-4767-a02e-ac02f88ae8ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\jAzulCore\include">
+      <UniqueIdentifier>{ab57f848-9276-490e-8d4e-078a1487ee1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\IrrKlang">
+      <UniqueIdentifier>{cc49334e-7128-413b-ba75-d732c73d6f49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\IrrKlang\include">
+      <UniqueIdentifier>{9456a53c-f30b-4603-b334-27958adbbce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\IrrKlang\lib">
+      <UniqueIdentifier>{e5973486-8185-4b8f-9f24-01dea67ecc2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LightDemo">
+      <UniqueIdentifier>{84a01f62-c8fe-45a9-8c05-a907a4335561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LightDemo\Scenes">
+      <UniqueIdentifier>{f42c1bda-a6e3-4eae-b888-ce824f50fad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\MOABE">
+      <UniqueIdentifier>{378ad231-595e-4050-88ef-d3cad77700a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\MOABE\include">
+      <UniqueIdentifier>{77809ea1-dc0e-4003-b710-b3a05c727e55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\MOABE\lib">
+      <UniqueIdentifier>{ab0b9cca-5d64-4b79-baba-edb0cde8d2c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LightDemo\Light Behaviours">
+      <UniqueIdentifier>{d14b89a3-1663-4eed-9b34-d6e7edbe995b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{7b94717d-e347-4c1b-b644-f822ad171613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemTracker">
+      <UniqueIdentifier>{40fc1586-a3b3-478e-8f52-1a0d1fed67e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LightDemo\Game Objects">
+      <UniqueIdentifier>{e748bd98-b745-4857-a684-03cc44098a12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\Math\include\Align16.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Constants.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Enum.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathEngine.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Matrix.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Quat.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\QuatApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Util.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Vect.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\VectApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\DXTex\include\DirectXTex.h">
+      <Filter>_Libs\DXTex\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File\include\File.h">
+      <Filter>_Libs\File\include</Filter>
+    </ClInclude>
+    <ClInclude Include="DX App\Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ESoundEngineOptions.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ESoundOutputDrivers.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_EStreamModes.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IAudioRecorder.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IAudioStream.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IAudioStreamLoader.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IFileFactory.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IFileReader.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IRefCounted.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_irrKlangTypes.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISound.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundDeviceList.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundEffectControl.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundEngine.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundMixedOutputReceiver.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundSource.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_ISoundStopEventReceiver.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_IVirtualRefCounted.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_SAudioStreamFormat.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\ik_vec3d.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\IrrKlang\include\irrKlang.h">
+      <Filter>_Libs\IrrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\Camera.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\d3dUtil.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\DeviceManager.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\DirectionalLight.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\Engine.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\ErrorLogger.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\FlatPlane.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\FogParamData.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GameTimer.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicObject_Base.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicObject_Color.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicObject_ColorLight.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsAttorney.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObject_Sprite.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObject_Texture.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObject_TextureAlpha.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObject_TextureLight.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObject_Wireframe.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObjectAttorney.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\GraphicsObjectWF.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\Image.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\jAzul.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\jAzulRect.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\Keyboard.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\KeyboardEvent.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\LightData.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\LightNum.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\LightParamData.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\MeshSeparator.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\Model.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\ModelTools.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\Mouse.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\MouseEvent.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\MousePoint.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\OrthographicCamera.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\PerspectiveCamera.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\PointLight.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\RenderWindow.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\Sampler.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderBase.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderColor.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderColorLight.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderContextManager.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderSprite.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderTexture.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderTextureLight.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\ShaderType.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\SkyBox.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\SpotLight.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\StringConverter.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\TerrainModel.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\Texture.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\jAzulCore\include\WindowsContainer.h">
+      <Filter>_Libs\jAzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Alarmable.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\AlarmableDeRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\AlarmableManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\AlarmableRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\AlarmID.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\AlarmList.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\AlarmRegistrationData.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\AssetManagers.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CameraManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CleanupSceneStrategy.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Collidable.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollidableDeRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollidableGroup.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollidableRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollisionDispatch.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollisionDispatchProxy.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollisionManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollisionTerrainDispatch.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollisionTestCommand.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollisionTestPairCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollisionTestSelfCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollisionTestTerrainCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CollisionVolume.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Colors.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CullDistProcessor.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CullViewProcessor.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CV_AABB.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CV_BoxBase.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CV_BSphere.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\CV_OBB.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\DebugSceneStrategy.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\DirectionalDeRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\DirectionalRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Drawable.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Drawable2DDeRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Drawable2DRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Drawable3DDeRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Drawable3DRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\DrawableManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\EngineMath.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\FontManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\FreezeTime.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\GameObject.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\GameObjectAttorney.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\GameObjectDeRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\GameObjectRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\ImageManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Inputable.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\InputableDeRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\InputableRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\InputRegistrationData.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\KeyEventManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\KeyEventType.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\LightAlarm.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\LightAttorney.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\LightBehaviourCommand.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\LightBlinkingCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\LightManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\LightProcessor.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\LightProcessors.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\LightStaticCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABE.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABEAttorney.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABEDirectionalLight.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABELight.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABENullTerrain.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABEPointLight.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABESkybox.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABESkyNull.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABESound.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABESpotLight.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABESprite.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABETerrain.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\MOABEUser.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\ModelManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\NormalProcessor.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\NormalSceneStrategy.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\PointDeRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\PointLightTrackingCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\PointRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\RegistrationBroker.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\RegistrationCommand.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\RegistrationStatus.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SamplerManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Scene.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SceneAttorney.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SceneManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SceneManagerAttorney.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SceneStrategies.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SceneStrategy.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SingleKeyEvent.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SkyboxObject.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SkyboxObjectManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SoundManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SpotDeRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SpotLightTrackingCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SpotRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SpriteFont.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\SpriteString.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\TerrainArea.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\TerrainAreaIterator.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\TerrainManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\TerrainObject.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\TerrainObjectManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\TextureManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\TimeAttorney.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\TimeManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Updatable.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\UpdatableDeRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\UpdatableManager.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\UpdatableRegCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizeAABBCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizeBSphereCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizeCmdPool.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizeCommand.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizeLineCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizeLineRayCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizeLineSegmentCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizeOBBCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizePointCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\Visualizer.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizerAttorney.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizerCmdBroker.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizerDefault.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizerDraw.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizerDrawAllCollidable.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizerMarkers.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizerMode.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizerStrategies.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizerStrategy.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VisualizeTerrainCellCmd.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\MOABE\include\VolumeAttorney.h">
+      <Filter>_Libs\MOABE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="CampfireScene.h">
+      <Filter>LightDemo\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="LightDemoFunctions.h" />
+    <ClInclude Include="..\..\..\..\..\MOABE Development\MOABE\MemTracker\Framework.h">
+      <Filter>MemTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\MOABE Development\MOABE\MemTracker\ProjectSettings.h">
+      <Filter>MemTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="FlatPlaneTextured.h">
+      <Filter>LightDemo\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="LightDayNight.h">
+      <Filter>LightDemo\Light Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="Campfire.h">
+      <Filter>LightDemo\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="LightFire.h">
+      <Filter>LightDemo\Light Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="Forest.h" />
+    <ClInclude Include="Tree.h">
+      <Filter>LightDemo\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceFrigate.h">
+      <Filter>LightDemo\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="LightForestScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\File\lib\File_Debug.lib">
+      <Filter>_Libs\File\lib</Filter>
+    </Library>
+    <Library Include="..\dist\IrrKlang\lib\irrKlang.lib">
+      <Filter>_Libs\IrrKlang\lib</Filter>
+    </Library>
+    <Library Include="..\dist\MOABE\lib\MOABE.lib">
+      <Filter>_Libs\MOABE\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DX App\DXApplication.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Assets\Shaders\ColorLight.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\ColorSelected.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\ColorSelected3D.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\SimpleColor.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\SimpleColor3D.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\SimpleColorPlus.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\Texture.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\TextureLight.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\Sprite.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\..\..\MOABE Development\MOABE\MemTracker\__DO NOT MODIFY__">
+      <Filter>MemTracker</Filter>
+    </None>
+    <None Include="..\dist\MOABE\lib\MOABE.pdb">
+      <Filter>_Libs\MOABE\lib</Filter>
+    </None>
+    <None Include="..\dist\MOABE\lib\mathengine_debug.pdb">
+      <Filter>_Libs\Math\lib</Filter>
+    </None>
+    <None Include="..\dist\MOABE\lib\jAzul.pdb">
+      <Filter>_Libs\jAzulCore\lib</Filter>
+    </None>
+    <None Include="..\dist\MOABE\lib\DirectXTex.pdb">
+      <Filter>_Libs\DXTex\lib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="DX App\directx.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="CampfireScene.cpp">
+      <Filter>LightDemo\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="LightDemoFunctions.cpp" />
+    <ClCompile Include="FlatPlaneTextured.cpp">
+      <Filter>LightDemo\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="LightDayNight.cpp">
+      <Filter>LightDemo\Light Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="Campfire.cpp">
+      <Filter>LightDemo\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="LightFire.cpp">
+      <Filter>LightDemo\Light Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="Forest.cpp" />
+    <ClCompile Include="SpaceFrigate.cpp">
+      <Filter>LightDemo\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree.cpp">
+      <Filter>LightDemo\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="LightForestScene.cpp" />
+  </ItemGroup>
+</Project>
